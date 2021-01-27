@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import PersonIcon from "@material-ui/icons/Person";
+import Header from "./components/header/Header";
+import LandingPage from "./components/landingPage/LandingPage";
+import Users from "./components/user/Users";
+import DataObj from "./components/data/data.json";
+import Divider from "@material-ui/core/Divider";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header/>
+    <LandingPage/>
+    </>
   );
 }
 
